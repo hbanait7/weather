@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+        System.import('./src/client.js');
+    </script>
+</head>
+<body>
+
+<p id="title">Weather</p>
+
+<div id="form">
+    <form>
+        <input type="text" id="city" placeholder="City"><br />
+        <input type="text" id="country" placeholder="Country"><br/>
+    </form>
+
+    <button id="submit" onclick="getWeather()">Submit</button>
+</div>
+
+<div id="result">
+  <div id="location"></div>
+  <div id="weather"></div>
+  <div id="icon"></div>
+  <div id="temp"></div>
+  <div id="feels-like"><span id="feels-like-result"></span></div>
+  <div id="wind"></div>
+</div>
+
+</body>
+</html>
