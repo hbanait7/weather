@@ -16,10 +16,7 @@ function getWeather() {
 
         let loc = document.getElementById('location').innerHTML = curObs.display_location.city + ', ' + curObs.display_location.country
 
-        //let img = document.createElement('img')
-          document.getElementById("image").src= curObs.icon_url
-          //img.src = curObs.icon_url
-          //document.getElementById('icon').appendChild(img)
+        document.getElementById("image").src= curObs.icon_url
 
         let temp = document.getElementById('temp').innerHTML = curObs.temp_c + '&#8451'
 
@@ -30,9 +27,7 @@ function getWeather() {
         let wind = document.getElementById('wind').innerHTML = 'Wind: ' + curObs.wind_string
 
         })
-
     })
-
 }
 
 
