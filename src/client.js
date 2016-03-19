@@ -16,9 +16,10 @@ function getWeather() {
 
         let loc = document.getElementById('location').innerHTML = curObs.display_location.city + ', ' + curObs.display_location.country
 
-        let img = document.createElement('img')
-          img.src = curObs.icon_url
-          document.getElementById('icon').appendChild(img)
+        //let img = document.createElement('img')
+          document.getElementById("image").src= curObs.icon_url
+          //img.src = curObs.icon_url
+          //document.getElementById('icon').appendChild(img)
 
         let temp = document.getElementById('temp').innerHTML = curObs.temp_c + '&#8451'
 
